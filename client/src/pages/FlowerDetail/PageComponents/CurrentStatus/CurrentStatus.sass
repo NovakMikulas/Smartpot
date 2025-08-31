@@ -1,0 +1,90 @@
+@import "../../../../styles/global.sass"
+
+.status-section
+    background: none
+    border-radius: 15px
+    padding: 2rem
+    
+    width: 100%
+    box-sizing: border-box
+
+    @media (max-width: 480px)
+        padding: 1rem
+        width: 100%
+
+    h3
+        margin-bottom: 1.5rem
+        color: $primary-text
+        text-align: center
+
+    .status-measurements
+        display: grid
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr))
+        gap: 1.5rem
+        width: 100%
+        box-sizing: border-box
+
+        @media (max-width: 480px)
+            grid-template-columns: 1fr
+            width: 100%
+
+        .status-item
+            display: flex
+            flex-direction: column
+            gap: 0.5rem
+            padding: 1rem
+            border-radius: 10px
+            background: rgba(255, 255, 255, 0.05)
+            width: 100%
+            box-sizing: border-box
+
+            @media (max-width: 480px)
+                align-items: center
+                text-align: center
+                width: 100%
+
+            span
+                color: $primary-text
+                font-size: 0.9rem
+                word-break: break-word
+
+            b
+                font-size: 1.2rem
+                color: $primary-text
+                word-break: break-word
+
+            .status-text
+                font-size: 0.8rem
+                padding: 0.25rem 0.5rem
+                border-radius: 4px
+                display: inline-block
+                width: fit-content
+                word-break: break-word
+
+                &.low
+                    background: rgba(231, 76, 60, 0.2)
+                    color: #e74c3c
+
+                &.medium
+                    background: rgba(241, 196, 15, 0.2)
+                    color: #f1c40f
+
+                &.high
+                    background: rgba(231, 76, 60, 0.2)
+                    color: #e74c3c
+
+                &.good
+                    background: rgba(46, 204, 113, 0.2)
+                    color: #2ecc71
+
+            &.temperature
+                border-left: 4px solid #e74c3c
+
+            &.humidity
+                border-left: 4px solid #3498db
+
+            &.light
+                border-left: 4px solid #f1c40f
+
+            &.battery
+                border-left: 4px solid #2ecc71 

@@ -1,0 +1,216 @@
+.main-notifications-container
+    padding: 20px
+    max-width: 1200px
+    margin: 0 auto
+
+    .main-notifications-title
+        margin-bottom: 24px
+
+    .invites-section
+        margin-bottom: 32px
+
+        .invites-title
+            margin-bottom: 16px
+
+        .invites-list
+            display: flex
+            flex-direction: column
+            gap: 16px
+
+    .no-invites-container
+        display: flex
+        justify-content: center
+        padding: 40px 0
+
+        .no-invites-content
+            display: flex
+            align-items: center
+
+            max-width: 600px
+            background: rgba(0,0,0,0.3)
+            border-radius: 16px
+            padding: 24px 32px
+
+            .no-invites-image
+                width: 120px
+                height: auto
+
+            p, .paragraph, .Paragraph
+                font-size: 1.3rem
+                color: #fff
+                font-weight: 500
+
+@media (max-width: 768px)
+    .main-notifications-container
+        .no-invites-container
+            display: none
+
+        .invites-section
+            width: 100%
+
+.main-notifications-title
+    text-align: center
+    @media (max-width: 768px)
+        font-size: 2rem
+
+.invites-section
+    margin-bottom: 32px
+
+.invites-title
+    text-align: center
+    margin-bottom: 16px
+    font-size: 1.5rem
+
+.invites-list
+    display: flex
+    flex-direction: column
+    gap: 12px
+    width: 60%
+    margin: 0 auto
+    @media (max-width: 768px)
+        width: 100%
+
+.invite-item
+    border: none
+    border-radius: 12px
+    padding: 16px
+    color: #ffffff
+    width: 100%
+    box-sizing: border-box
+    border: 2px solid #888
+
+    .invite-content
+        display: flex
+        width: 100%
+        justify-content: space-between
+        gap: 12px
+
+    .invite-header
+        display: flex
+        justify-content: space-between
+        align-items: center
+
+    .invite-household
+        font-size: 16px
+        font-weight: 500
+
+    .invite-timestamp
+        font-size: 14px
+        opacity: 0.7
+        margin-left: 20px
+
+    .invite-message
+        font-size: 14px
+        opacity: 0.8
+
+    .invite-actions
+        display: flex
+        gap: 8px
+        margin-top: 8px
+
+.back-button
+    cursor: pointer
+    display: flex
+    align-items: center
+    max-width: 400px
+    margin: 0 auto
+    @media (max-width: 768px)
+        width: 100%
+
+
+
+.notification-item
+    border: none
+    border-radius: 12px
+    padding: 16px 20px
+    display: flex
+    align-items: center
+    justify-content: space-between
+    transition: background-color 0.2s
+    color: #ffffff
+    width: 100%
+    box-sizing: border-box
+    border: 2px solid #888
+    cursor: pointer
+
+    .household-name
+        font-size: 16px
+        font-weight: 500
+
+    .notification-count
+        background: #4CAF50
+        color: white
+        border-radius: 50%
+        width: 24px
+        height: 24px
+        display: flex
+        align-items: center
+        justify-content: center
+        font-size: 14px
+        margin-left: auto
+        margin-right: 12px
+
+    .arrow
+        font-size: 20px
+        opacity: 0.7
+
+.notifications-list
+    display: flex
+    flex-direction: column
+    gap: 12px
+    width: 60%
+    margin: 0 auto
+    @media (max-width: 768px)
+        width: 100%
+
+.alert-item
+    display: flex
+    align-items: flex-start
+    gap: 16px
+    color: #ffffff
+    width: 100%
+    padding: 16px
+    box-sizing: border-box
+    border-radius: 12px
+
+    .alert-icon
+        font-size: 24px
+        min-width: 32px
+        display: flex
+        align-items: center
+        justify-content: center
+
+    .alert-content
+        flex: 1
+
+        .alert-plant-name
+            font-weight: 500
+            margin-bottom: 4px
+
+        .alert-message
+            opacity: 0.8
+            font-size: 14px
+            margin-bottom: 4px
+
+        .alert-timestamp
+            font-size: 12px
+            opacity: 0.6
+            color: #ffffff
+
+.invite-action-button
+    cursor: pointer
+    transition: all 0.3s ease
+    border: 1px solid #ffffff
+    border-radius: 50%
+    padding: 4px
+
+    &:hover
+        transform: scale(1.1)
+        opacity: 0.8
+
+.loading-container
+    display: flex
+    justify-content: center
+    align-items: center
+    min-height: 200px
+    width: 100%

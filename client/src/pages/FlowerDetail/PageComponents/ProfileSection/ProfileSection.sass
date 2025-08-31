@@ -1,0 +1,164 @@
+.profile-content
+    margin-top: 2rem
+    padding: 1rem
+    margin: 0 auto
+    display: flex
+    flex-direction: column
+    align-items: center
+    width: 100%
+    max-width: 900px
+    box-sizing: border-box
+
+    @media (max-width: 768px)
+        padding: 0.75rem
+        margin-top: 1.5rem
+
+    @media (max-width: 480px)
+        padding: 0.5rem
+        margin-top: 1rem
+
+    .profile-header
+        display: flex
+        align-items: center
+        justify-content: center
+        width: 100%
+        margin-bottom: 1rem
+
+        .profile-title
+            color: white
+            text-align: center
+            width: 100%
+            margin-bottom: 1rem
+            display: flex
+            align-items: center
+            justify-content: center
+            gap: 0.5rem
+            font-size: 1.5rem
+            font-weight: 500
+
+            @media (max-width: 768px)
+                margin-bottom: 0.75rem
+                font-size: 1.3rem
+
+            @media (max-width: 480px)
+                margin-bottom: 0.5rem
+                font-size: 1.1rem
+
+        .edit-button
+            cursor: pointer
+            transition: all 0.2s
+            color: #bfbfbf
+            border: 1px solid #bfbfbf
+            border-radius: 30%
+            padding: 0.2rem
+            font-size: 1.2rem
+            display: flex
+            align-items: center
+            justify-content: center
+            background: none
+
+            @media (max-width: 768px)
+                font-size: 1.1rem
+
+            @media (max-width: 480px)
+                font-size: 1rem
+
+            &:hover
+                transform: scale(1.1)
+                color: white
+
+    .profile-text
+        margin: 0
+        font-size: 1.2rem
+        color: white
+        line-height: 1.5
+        text-align: center
+        width: 100%
+        margin-bottom: 1.5rem
+
+        @media (max-width: 768px)
+            font-size: 1.1rem
+            line-height: 1.4
+            margin-bottom: 1.25rem
+
+        @media (max-width: 480px)
+            font-size: 1rem
+            line-height: 1.3
+            margin-bottom: 1rem
+
+    .profile-settings
+        width: 100%
+        display: grid
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr))
+        gap: 1.5rem
+        margin: 0 auto
+        padding: 0
+        box-sizing: border-box
+        margin-top: 10px
+
+        @media (max-width: 768px)
+            grid-template-columns: repeat(2, 1fr)
+            gap: 1rem
+
+        @media (max-width: 480px)
+            grid-template-columns: 1fr
+            gap: 0.75rem
+
+        .setting-group
+            padding: 1.5rem
+            width: 100%
+            display: flex
+            flex-direction: column
+            justify-content: flex-start
+            align-items: flex-start
+            border: 2px solid #888
+            border-radius: 18px
+            box-shadow: 0 4px 16px rgba(0,0,0,0.25)
+            transition: box-shadow 0.2s
+            overflow-wrap: break-word
+            box-sizing: border-box
+
+            @media (max-width: 768px)
+                padding: 1.25rem
+
+            @media (max-width: 480px)
+                padding: 1rem
+
+            &:hover
+                box-shadow: 0 8px 24px rgba(0,0,0,0.35)
+
+            .setting-title
+                font-weight: bold
+                margin-bottom: 1.25rem
+                color: white
+                font-size: 1.3rem
+                text-align: center
+                width: 100%
+
+                @media (max-width: 768px)
+                    font-size: 1.2rem
+                    margin-bottom: 1rem
+
+                @media (max-width: 480px)
+                    font-size: 1.1rem
+                    margin-bottom: 0.75rem
+
+            .setting-item
+                width: 100%
+                display: flex
+                justify-content: space-between
+                margin-bottom: 0.5rem
+                color: white
+                font-size: 1.1rem
+
+                @media (max-width: 768px)
+                    font-size: 1rem
+                    margin-bottom: 0.4rem
+
+                @media (max-width: 480px)
+                    font-size: 0.95rem
+                    margin-bottom: 0.3rem
+
+                span:last-child
+                    font-weight: bold
+                    color: #fff 

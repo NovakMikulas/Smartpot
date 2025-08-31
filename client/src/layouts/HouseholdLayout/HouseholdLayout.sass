@@ -1,0 +1,76 @@
+@import '../../styles/global.sass'
+
+.household-layout__navigation
+    display: flex
+    justify-content: space-between
+    align-items: center
+    padding: 1rem
+    width: 300px
+    margin: 0 10px
+    & > *
+        cursor: pointer
+        border-radius: 50%
+        border: 2px solid #bfbfbf
+        padding: 0.5rem
+        transition: all 0.3s ease
+        &:hover
+            border-color: green
+        &.active
+            border-color: green
+
+    @media screen and (max-width: 1500px)
+        width: 100%
+        justify-content: center
+        gap: 1rem
+        margin: 0
+        padding: 1rem 0
+        & > *
+            margin: 0 0.5rem
+            padding: 0.3rem
+            & svg
+                width: 24px
+                height: 24px
+
+@media screen and (min-width: 1500px)
+    .household-layout__navigation
+        position: fixed
+        left: -60px
+        top: 50%
+        transform: translateY(-50%)
+        flex-direction: column
+        width: auto
+        gap: 1rem
+        margin: 0
+        transition: left 0.3s ease
+        &:hover
+            left: 20px
+        & > *
+            opacity: 0
+            transform: translateX(-20px)
+            transition: all 0.3s ease
+        &:hover > *
+            opacity: 1
+            transform: translateX(0)
+
+    .navigation-indicator
+        position: fixed
+        left: 0
+        top: 50%
+        transform: translateY(-50%)
+        width: 40px
+        height: 100px
+        background: rgba(0, 0, 0, 0.1)
+        border-radius: 0 10px 10px 0
+        display: flex
+        align-items: center
+        justify-content: center
+        cursor: pointer
+        transition: all 0.3s ease
+
+        &:hover
+            background: rgba(0, 0, 0, 0.2)
+            & svg
+                transform: translateX(5px)
+        & svg
+            color: #4CAF50
+            transition: transform 0.3s ease

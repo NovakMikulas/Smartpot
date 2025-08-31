@@ -1,0 +1,60 @@
+@import "../../styles/global.sass"
+
+.button
+  padding: 10px 20px
+  border-radius: 5px
+  font-size: 16px
+  cursor: pointer
+  transition: background-color 0.3s ease
+
+.button.default
+  background-color: transparent
+  color: $primary-text
+  border: 1px solid $button-defult-border
+  border-radius: 8px
+  padding: 0.8rem 2rem
+  font-size: 1rem
+  cursor: pointer
+  transition: all 0.3s ease
+
+  &:hover
+    background-color: rgba(255, 255, 255, 0.1)
+    color: $primary-text
+
+  @media (max-width: 768px)
+    padding: 0.5rem 1rem
+    font-size: 0.8rem
+
+.button.warning
+  background-color: transparent
+  color: $warning-text-color
+  border: 1px solid $warning-text-color
+  border-radius: 8px
+  padding: 0.8rem 2rem
+  font-size: 1rem
+  cursor: pointer
+  transition: all 0.3s ease
+
+.button.success
+  color: darkgreen
+  border: 1px solid darkgreen
+
+.button.text
+  background: none
+  border: none
+  color: #999999
+  padding: 0.5rem 0
+  font-size: 1rem
+  cursor: pointer
+  transition: color 0.3s ease
+
+  &:hover
+    color: #ffffff
+
+.button:hover
+  opacity: 0.8
+
+.button.disabled
+  opacity: 0.5
+  cursor: not-allowed
+  pointer-events: none

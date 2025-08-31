@@ -1,0 +1,107 @@
+.transplant-smart-pot-container
+    position: fixed
+    top: 0
+    left: 0
+    width: 100%
+    height: 100%
+    background-color: rgba(0, 0, 0, 0.5)
+    display: flex
+    justify-content: center
+    align-items: center
+    z-index: 1000
+
+.transplant-smart-pot-content
+    background-color: #000000
+    border-radius: 1rem
+    padding: 2rem
+    width: 90%
+    max-width: 500px
+    position: relative
+    display: flex
+    flex-direction: column
+    align-items: center
+    justify-content: center
+
+.transplant-smart-pot-close-button
+    position: absolute
+    top: 1rem
+    right: 1rem
+    background: none
+    border: none
+    color: #bfbfbf
+    font-size: 1.5rem
+    cursor: pointer
+    padding: 0.5rem
+    line-height: 1
+    transition: color 0.2s ease
+
+    &:hover
+        color: #fff
+
+.transplant-smart-pot-form
+    margin-top: 1.5rem
+
+.transplant-smart-pot-form-group
+    margin-bottom: 1.5rem
+
+.transplant-smart-pot-label
+    display: block
+    margin-bottom: 0.5rem
+    color: #bfbfbf
+    font-size: 0.9rem
+
+.transplant-smart-pot-current
+    padding: 0.75rem
+    background-color: #333
+    border-radius: 4px
+    color: #fff
+
+.transplant-smart-pot-select
+    width: 100%
+    padding: 0.75rem
+    background-color: #333
+    border: 1px solid #444
+    border-radius: 4px
+    color: #fff
+    font-size: 1rem
+    cursor: pointer
+    transition: border-color 0.2s ease
+
+    &:focus
+        outline: none
+        border-color: #666
+
+.transplant-smart-pot-radio-group
+    display: flex
+    gap: 1.5rem
+    margin-top: 0.5rem
+
+    label
+        display: flex
+        align-items: center
+        gap: 0.5rem
+        color: #bfbfbf
+        cursor: pointer
+
+        input[type="radio"]
+            accent-color: #4CAF50
+
+.transplant-smart-pot-button
+    width: 100%
+    padding: 0.75rem
+    background-color: #4CAF50
+    color: #fff
+    border: none
+    border-radius: 4px
+    font-size: 1rem
+    cursor: pointer
+    transition: background-color 0.2s ease
+
+    &:hover:not(:disabled)
+        background-color: #45a049
+
+    &:disabled
+        background-color: #666
+        cursor: not-allowed
+.transplant-smart-pot-no-flowers
+    color: #ff0000

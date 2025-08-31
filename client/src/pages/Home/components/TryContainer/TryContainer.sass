@@ -1,0 +1,97 @@
+.try-container
+  &__wrapper
+    position: relative
+    display: flex
+    flex-wrap: wrap
+    max-width: 1200px
+    width: 90%
+    margin: 0 auto
+    margin-top: 5%
+    background: none
+
+  &__image
+    flex: 0 0 45%
+    position: relative
+    z-index: 2
+    margin-bottom: 20px
+
+  &__plant-image
+    max-width: 80%
+    height: auto
+    display: block
+    position: relative
+    margin-top: -70px
+
+  &__content
+    flex: 0 0 50%
+    color: white
+    display: flex
+    flex-direction: column
+    gap: 15px
+    padding: 20px
+
+  &__title
+    font-size: 36px
+    font-weight: 700
+    margin: 0 0 10px 0
+
+  &__subtitle
+    font-size: 28px
+    font-weight: 600
+    margin: 0 0 15px 0
+
+  &__text
+    margin: 0 0 10px 0
+
+  &__button
+    margin-top: 20px
+    background: transparent
+    color: white
+    border: 1px solid white
+    border-radius: 8px
+    padding: 10px 25px
+    font-size: 16px
+    cursor: pointer
+    align-self: flex-start
+    transition: all 0.3s ease
+    text-align: center
+    width: fit-content
+
+    &:hover
+      background-color: white
+      color: black
+
+@media (max-width: 900px)
+  .try-container
+    &__wrapper
+      flex-direction: column
+      align-items: center
+      width: 75%
+      padding: 15px
+
+    &__image
+      flex: 0 0 100%
+      margin-left: 0
+      text-align: center
+
+    &__content
+      flex: 0 0 100%
+      padding: 10px 15px 20px
+
+    &__plant-image
+      margin: -40px auto 10px
+      max-width: 70%
+
+    &__subtitle
+      font-size: 24px
+      text-align: center
+
+    &__text
+      text-align: center
+
+    &__button
+      align-self: center
+      margin-top: 15px
+      padding: 12px 25px
+      font-size: 14px
+      width: auto

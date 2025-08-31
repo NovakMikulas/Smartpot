@@ -1,0 +1,5 @@
+files/folders and endpoints = kebab-case
+variables, functions and JSON = camelCase
+class and models = PascalCase
+constants = SCREAMING_SNAKE_CASE
+database tables, columns = snake_case

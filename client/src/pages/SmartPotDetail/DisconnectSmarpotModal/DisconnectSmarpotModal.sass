@@ -1,0 +1,86 @@
+.disconnect-smartpot
+    &-container
+        position: fixed
+        top: 0
+        left: 0
+        right: 0
+        bottom: 0
+        background-color: rgba(0, 0, 0, 0.5)
+        display: flex
+        justify-content: center
+        align-items: center
+        z-index: 1000
+        padding: 1rem
+
+    &-step-container
+        background-color: rgb(0, 0, 0)
+        padding: 2rem
+        border-radius: 1rem
+        width: 90%
+        max-width: 500px
+        position: relative
+        display: flex
+        flex-direction: column
+        border: 2px solid grey
+        gap: 1rem
+
+    &-close-button
+        position: absolute
+        top: 1rem
+        right: 1rem
+        background: none
+        border: none
+        font-size: 1.5rem
+        cursor: pointer
+        color: #ffffff
+
+    &-content
+        display: flex
+        flex-direction: column
+        gap: 1.5rem
+        padding: 1rem 0
+
+    &-message
+        color: #ffffff
+        font-size: 1rem
+        line-height: 1.5
+        text-align: center
+
+    &-error-message
+        color: #FF3B30
+        font-size: 14px
+        text-align: center
+
+    &-buttons
+        display: flex
+        gap: 1rem
+        justify-content: center
+        margin-top: 1rem
+
+    &-button
+        padding: 0.8rem 1.5rem
+        border-radius: 20px
+        font-size: 1rem
+        cursor: pointer
+        transition: all 0.3s ease
+        min-width: 120px
+
+        &:disabled
+            opacity: 0.5
+            cursor: not-allowed
+
+        &--cancel
+            background: transparent
+            border: 1px solid #666666
+            color: #ffffff
+
+            &:hover
+                background: rgba(102, 102, 102, 0.1)
+
+        &--confirm
+            background: transparent
+            border: 1px solid #FF3B30
+            color: #FF3B30
+
+            &:hover
+                background: rgba(255, 59, 48, 0.1)

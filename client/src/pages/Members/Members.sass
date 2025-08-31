@@ -1,0 +1,194 @@
+.manage-members-container
+    display: flex
+    flex-direction: column
+    min-height: 100vh
+    padding: 20px
+    background: #000000
+    color: #ffffff
+    max-width: 1200px
+    margin: 0 auto
+    box-sizing: border-box
+    overflow-x: hidden
+
+    @media (max-width: 768px)
+        padding: 10px
+
+    .manage-members-title
+        text-align: center
+
+        @media (max-width: 768px)
+            font-size: 1.8rem
+            margin-bottom: 1.5rem
+
+    .manage-members-content
+        display: flex
+        flex-direction: column
+        gap: 20px
+        max-width: 800px
+        margin: 0 auto
+        width: 100%
+        padding: 2rem
+        box-sizing: border-box
+
+        @media (max-width: 768px)
+            padding: 1rem
+            gap: 15px
+
+    .section-title
+        margin-bottom: 20px
+        color: #ffffff
+        font-size: 1.5rem
+        font-weight: 600
+
+        @media (max-width: 768px)
+            font-size: 1.3rem
+            margin-bottom: 15px
+
+    .members-section
+        background: none
+        border-radius: 10px
+        padding: 20px
+        display: flex
+        align-items: flex-start
+        width: 100%
+        display: flex
+        flex-direction: column
+        justify-content: center
+        align-items: center
+        box-sizing: border-box
+
+        .section-content
+            flex: 1
+            display: flex
+            flex-direction: column
+            gap: 15px
+            width: 100%
+
+            .members-list
+                display: flex
+                flex-direction: column
+                gap: 10px
+                width: 100%
+
+                @media (max-width: 480px)
+                    gap: 8px
+
+                .member-item
+                    display: flex
+                    align-items: center
+                    justify-content: space-between
+                    gap: 10px
+                    padding: 10px
+                    background: none
+                    border-bottom: 1px solid rgba(255, 255, 255, 0.2)
+
+                    @media (max-width: 768px)
+                        flex-direction: column
+                        align-items: flex-start
+                        gap: 8px
+                        padding: 12px 8px
+
+                    .member-info
+                        display: flex
+                        align-items: center
+                        gap: 10px
+                        flex: 1
+                        width: 100%
+
+                        @media (max-width: 768px)
+                            flex-direction: row
+                            flex-wrap: wrap
+                            gap: 8px
+
+                        .member-name
+                            font-size: 1rem
+                            color: #ffffff
+                            text-align: left
+                            word-break: break-word
+
+                        .owner-tag, .member-tag, .invited-tag
+                            margin-left: 10px
+                            padding: 2px 6px
+                            border-radius: 4px
+                            font-size: 0.8rem
+                            align-self: center
+                            line-height: 1.2
+                            background-color: none
+                            white-space: nowrap
+
+                            @media (max-width: 768px)
+                                margin-left: 0
+
+                        .owner-tag
+                            color: #FFEF45
+                            border: 1px solid #FFEF45
+                            margin-left: auto
+
+                            @media (max-width: 768px)
+                                font-size: 1rem
+                                margin-left: 0
+
+                            @media (max-width: 500px)
+                                align-self: flex-start
+
+                        .member-tag
+                            color: #2196F3
+                            border: 1px solid #2196F3
+
+                        .invited-tag
+                            color: #4CAF50
+                            border: 1px solid #4CAF50
+                            margin-left: auto
+
+                        @media (max-width: 768px)
+                            font-size: 1rem
+                        @media (max-width: 500px)
+                            align-self: flex-start
+
+                    .member-actions
+                        display: flex
+                        gap: 8px
+                        margin-left: auto
+
+                        @media (max-width: 768px)
+                            flex-direction: column
+                            width: 100%
+                            margin-left: 0
+                            gap: 10px
+
+                        .make-owner-button
+                            font-size: 0.9rem
+                            border: 1px solid rgba(255, 0, 0, 0.5)
+                            color: #ff4444
+
+                            @media (max-width: 768px)
+                                width: 100%
+                                padding: 0.6rem
+
+                        .remove-button
+                            font-size: 0.9rem
+                            border: 1px solid rgba(255, 0, 0, 0.5)
+                            color: #ff4444
+
+    .add-member-icon
+        display: flex
+        justify-content: center
+        align-items: center
+        padding: 1rem
+        cursor: pointer
+        transition: all 0.3s ease
+
+        &:hover
+            transform: scale(1.1)
+            color: #2196F3
+
+    @media (max-width: 768px)
+        .section-title
+            font-size: 1.2rem
+
+        .member-actions
+            flex-direction: column
+            width: 100%
+
+            .make-owner-button, .remove-button
+                width: 100%

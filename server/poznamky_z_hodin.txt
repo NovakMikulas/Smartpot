@@ -1,0 +1,31 @@
+scheduler plánování každých x ms , když se např zmačkne tlačítko.
+využití např při resetu
+
+
+technická dokumentace:
+schéma zapojení - fotka zařízení
+složeno z - součástek
+forma dokumentace firmwaru (např algoritmus komponenta)
+-každých 10 měřím co2- každých 10s posílám rádiem atd.
+
+gateway
+screenshot nodered flow
+stručně popsat
+
+gateway řeší 3 základní věci
+prijimani dat , načtení dat
+spočtení průměru atd,odesilání dat z bufferu (pojmenovávání nodu)
+autorizaci např
+spíše vícero flow
+více tabulek např
+
+
+
+
+
+persistence layer
+prendat rozvrh do květináče jako pole aby byla historie
+
+registra zarizeni -> kvetinac
+muze byt kvetinac bez kytky
+chytry kvetinac -> kvetina

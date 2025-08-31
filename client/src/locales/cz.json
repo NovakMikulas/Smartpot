@@ -1,0 +1,681 @@
+{
+    "common": {
+        "loading": "Načítání...",
+        "error": "Chyba",
+        "success": "Úspěch",
+        "save": "Uložit",
+        "cancel": "Zrušit",
+        "delete": "Smazat",
+        "edit": "Upravit",
+        "loading_text": "Načítání..."
+    },
+    "not_found": {
+        "title": "404",
+        "subtitle": "Stránka nenalezena",
+        "description": "Omlouváme se, ale stránka kterou hledáte neexistuje.",
+        "button": "Zpět na hlavní stránku"
+    },
+    "navigation": {
+        "home": "Domů",
+        "households": "Domácnosti",
+        "notifications": "Oznámení",
+        "logout": "Odhlásit",
+        "register": "Registrace",
+        "login": "Přihlášení",
+        "user_profile": "Uživatelský profil"
+    },
+    "manage_household": {
+        "title": "Správa",
+        "loading": "Načítání...",
+        "not_found": "Domácnost nenalezena",
+        "no_permission": "Nemáte oprávnění spravovat tuto domácnost",
+        "sections": {
+            "members": {
+                "title": "Členové",
+                "manage_button": "Spravovat členy",
+                "owner_tag": "Vlastník"
+            },
+            "flowers": {
+                "title": "Květiny",
+                "manage_button": "Spravovat květiny",
+                "no_items": "Žádné květiny"
+            },
+            "profiles": {
+                "title": "Profily květin",
+                "manage_button": "Spravovat profily",
+                "no_items": "Žádné profily"
+            },
+            "flowerpots": {
+                "title": "Květináče",
+                "manage_button": "Spravovat květináče",
+                "no_items": "Žádné květináče",
+                "loading": "Načítání květináčů...",
+                "status": {
+                    "signed": "Přiřazeno ke květině",
+                    "not_signed": "Nepřiřazeno ke květině"
+                }
+            },
+            "danger_zone": {
+                "title": "Nebezpečná zóna",
+                "description": "Smazání domácnosti je nevratná akce. Všechna data včetně květináčů a profilů budou trvale ztracena.",
+                "delete_button": "Smazat domácnost"
+            }
+        },
+        "manage_members": {
+            "title": "Správa členů v",
+            "household_members": "Členové domácnosti",
+            "roles": {
+                "owner": "Vlastník",
+                "member": "Člen"
+            },
+            "actions": {
+                "make_owner": "Učinit vlastníkem",
+                "remove": "Odstranit"
+            },
+            "add_member": {
+                "title": "Přidat člena",
+                "input": "Email nového člena",
+                "button": "Pozvat člena",
+                "invite_member": "Pozvat člena",
+                "email": "Email",
+                "email_placeholder": "Zadejte emailovou adresu",
+                "send": "Odeslat pozvánku",
+                "sending": "Odesílání...",
+                "error": {
+                    "select_user": "Vyberte prosím uživatele",
+                    "user_already_member": "Tento uživatel již je členem domácnosti",
+                    "user_already_invited": "Tento uživatel již má pozvánku",
+                    "invite_send_failed": "Chyba při odesílání pozvánky. Zkuste to prosím znovu."
+                },
+                "toast": {
+                    "invite_sent_success": "Pozvánka byla odeslána!"
+                },
+                "console": {
+                    "error_details_prefix": "Detaily chyby:"
+                },
+                "search_placeholder": "Zadejte jméno uživatele...",
+                "sending_button": "Odesílání...",
+                "invite_button": "Pozvat"
+            },
+            "toast": {
+                "remove_member_success": "Člen byl úspěšně odstraněn",
+                "remove_member_error": "Nepodařilo se odstranit člena",
+                "make_owner_success": "Vlastník byl úspěšně změněn",
+                "make_owner_error": "Nepodařilo se změnit vlastníka"
+            },
+            "console": {
+                "remove_member_error_prefix": "Chyba při odstranění člena:",
+                "make_owner_error_prefix": "Chyba při změně vlastníka:"
+            },
+            "unknown_user": "Neznámý uživatel",
+            "household_not_found": "Domácnost nebyla nalezena",
+            "no_permission": "Nemáte oprávnění ke správě této domácnosti",
+            "active_members": "Aktivní členové",
+            "invited_users": "Pozvaní uživatelé",
+            "invited_tag": "Pozvaný"
+        },
+        "manage_flowers": {
+            "title": "Správa květin v",
+            "household_flowers": "Květiny v domácnosti",
+            "actions": {
+                "add": "Přidat květinu"
+            }
+        }
+    },
+    "create_household": {
+        "title": "Vytvořit domácnost",
+        "description": "Vytvořte novou domácnost pro správu vašich rostlin.",
+        "input": "Název domácnosti",
+        "button": "Vytvořit domácnost",
+        "error": {
+            "empty_name": "Název domácnosti nemůže být prázdný",
+            "general": "Nepodařilo se vytvořit domácnost. Prosím zkuste to znovu.",
+            "unauthorized": "Pro vytvoření domácnosti musíte být přihlášeni",
+            "server": "Došlo k chybě serveru. Prosím zkuste to později."
+        }
+    },
+    "homepage": {
+        "homepage_intro": {
+            "title": "Chytrý květináč",
+            "description": "Květináč je chytré zařízení, které vám pomáhá pečovat o vaše rostliny. Sleduje teplotu, vlhkost, světlo a hladinu vody v květináči a poskytuje vám potřebné informace pro péči o vaše rostliny.",
+            "button": "Zobrazit domácnosti"
+        },
+        "homepage_features": {
+            "title": "Funkce",
+            "features": {
+                "smart_pot": {
+                    "title": "Monitorování chytrého květináče",
+                    "description": "Monitorování chytrého květináče je funkce, která vám umožňuje sledovat váš chytrý květináč odkudkoli na světě."
+                },
+                "flower_care": {
+                    "title": "Péče o květiny",
+                    "description": "Péče o květiny je funkce, která vám umožňuje starat se o vaše květiny."
+                },
+                "household_management": {
+                    "title": "Správa domácnosti",
+                    "description": "Správa domácnosti je funkce, ktorá vám umožňuje spravovat vaši domácnost."
+                }
+            }
+        },
+        "homepage_try_it": {
+            "title": "Vyzkoušejte nyní",
+            "description": "Květináč je chytré zařízení, které vám pomáhá pečovat o vaše rostliny.",
+            "button": "Zobrazit domácnosti"
+        }
+    },
+    "households": {
+        "households_list": {
+            "title": "Seznam domácností",
+            "actions": {
+                "check": "Zobrazit",
+                "manage": "Spravovat",
+                "create_new": "Vytvořit novou"
+            },
+            "no_households": "Žádné registrované domácnosti. Prosím vytvořte jednu.",
+            "access_denied_toast": "K této domácnosti již nemáte přístup."
+        },
+        "role": {
+            "owner": "Vlastník",
+            "member": "Člen"
+        },
+        "access_denied_toast": "K této domácnosti již nemáte přístup.",
+        "filters": {
+            "all": "Vše",
+            "owner": "Vlastník",
+            "member": "Člen",
+            "search_placeholder": "Hledat domácnost..."
+        }
+    },
+    "flower_list": {
+        "title": "Květiny v",
+        "actions": {
+            "add": "Přidat květinu",
+            "add_flowerpot": "Přidat květináč",
+            "manage_profiles": "Spravovat profily",
+            "transplant": "Přesadit"
+        },
+        "filters": {
+            "all": "Vše",
+            "active": "Aktivní",
+            "not_active": "Neaktivní",
+            "free_flowerpot_counter": "Volné květináče",
+            "all_profiles": "Všechny profily",
+            "own_settings": "Vlastní nastavení",
+            "not_assigned": "Nepřiřazeno",
+            "assigned": "Přiřazeno"
+        },
+        "profile": {
+            "assigned": "Profil přiřazen",
+            "not_assigned": "Profil nepřiřazen"
+        },
+        "no_flowers": "Žádné květiny",
+        "flower_item": {
+            "details": "Detaily",
+            "edit": "Upravit květinu",
+            "delete": "Smazat",
+            "assign": "Přiřadit ke květináči"
+        },
+        "error": {
+            "measurements_loading_failed": "Nepodařilo se načíst měření pro květiny.",
+            "profiles_loading_failed": "Nepodařilo se načíst profily květin.",
+            "generic_loading_failed": "Vyskytla se chyba při načítání dat."
+        }
+    },
+    "flower_measurments": {
+        "status": "Stav",
+        "measurements": "měření",
+        "no_measurements": "Žádná měření k dispozici",
+        "measurments": {
+            "humidity": "Vlhkost",
+            "temperature": "Teplota",
+            "light": "Světlo",
+            "water_level": "Hladina vody",
+            "battery": "Baterie"
+        },
+        "filter_date_range": {
+            "day": "Den",
+            "week": "Posledních 7 dní",
+            "month": "Poslední měsíc",
+            "custom": "Vlastní rozsah",
+            "from": "Od",
+            "to": "Do"
+        },
+        "irrigation": {
+            "title": "Manuální zalévání",
+            "placeholder": "Zadejte hodnotu v ml",
+            "button": "Zalít"
+        },
+        "status_low_temperature": "Nízká teplota",
+        "status_high_temperature": "Vysoká teplota",
+        "status_low_humidity": "Nízká vlhkost",
+        "status_high_humidity": "Vysoká vlhkost",
+        "status_low_light": "Málo světla",
+        "status_high_light": "Moc světla",
+        "status_ok": "Vše v normě",
+        "status_unknown": "Neznámá hodnota",
+        "status_low_battery": "Nízký stav baterie",
+        "status_medium_battery": "Střední stav baterie",
+        "loading_flowerpot_data": "Načítám data květináče...",
+        "no_value_placeholder": "-",
+        "unit": {
+            "lux": "%"
+        },
+        "error": {
+            "invalid_date_format": "Neplatný formát data"
+        }
+    },
+    "add_flower": {
+        "title": "Vytvořit květinu",
+        "description": "Nastavení květináče",
+        "name": "Název květiny",
+        "name_placeholder": "Zadejte název květiny",
+        "profile_type": "Typ profilu",
+        "use_existing_profile": "Použít existující profil",
+        "custom_settings": "Vlastní nastavení",
+        "select_profile": "Vyberte profil",
+        "select_profile_placeholder": "Vyberte existující profil",
+        "temperature": "Teplota (°C)",
+        "humidity": "Vlhkost (%)",
+        "light": "Světlo (%)",
+        "avatar": "Avatar květiny",
+        "schedule_title": "Rozvrh zavlažování",
+        "schedule": {
+            "monday": "Pondělí",
+            "tuesday": "Úterý",
+            "wednesday": "Středa",
+            "thursday": "Čtvrtek",
+            "friday": "Pátek",
+            "saturday": "Sobota",
+            "sunday": "Neděle"
+        },
+        "schedule_from": "Od",
+        "schedule_to": "Do",
+        "saving": "Ukládání...",
+        "final_button": "Dokončit",
+        "default_flower_name": "Nový květináč",
+        "range_separator": "až",
+        "placeholder_min": "Min",
+        "placeholder_max": "Max",
+        "avatar_alt_text": "Avatar květiny {{index}}",
+        "error": {
+            "name_required": "Název květiny je povinný",
+            "profile_required": "Prosím vyberte profil",
+            "schedule_required": "Je potřeba alespoň jeden časový interval",
+            "invalid_time_range": "Neplatný časový rozsah pro {{day}} - čas 'Od' musí být před časem 'Do'",
+            "creation_failed_toast": "Chyba při vytváření květiny",
+            "creation_failed_message": "Chyba při vytváření květináče. Zkuste to prosím znovu.",
+            "no_flower_id_returned": "ID květiny nebylo vráceno ze serveru",
+            "schedule_creation_failed": "Nepodařilo se vytvořit rozvrh"
+        },
+        "success": {
+            "flower_added": "Květina byla úspěšně přidána"
+        }
+    },
+    "add_flowerpot": {
+        "title": "Připojte květináč k vaší domácnosti",
+        "description": "Nastavení květináče",
+        "input": "Název květináče",
+        "button": "Vytvořit květináč",
+        "serial_number": "Sériové číslo květináče",
+        "connect": "Připojit",
+        "help_title": "Jak se připojit?",
+        "help_steps": ["Zapněte květináč", "Stiskněte tlačítko párování", "Zadejte sériové číslo květináče"]
+    },
+    "login_page": {
+        "title": "Přihlášení",
+        "input": "Email",
+        "button": "Přihlásit se",
+        "loading": "Přihlašování",
+        "register": "Registrace",
+        "password": "Heslo",
+        "success": "Úspěšně přihlášeno",
+        "forgot_password": "Zapomenuté heslo",
+        "reset_password": "Obnovit heslo",
+        "back_to_login": "Zpět na přihlášení",
+        "reset_success": "Pokyny pro obnovení hesla byly odeslány na váš email",
+        "error": {
+            "empty_fields": "Prosím vyplňte všechna pole",
+            "invalid_credentials": "Neplatné přihlašovací údaje",
+            "reset_failed": "Nepodařilo se odeslat instrukce pro obnovení hesla"
+        }
+    },
+    "register_page": {
+        "title": "Registrace",
+        "input": "Email",
+        "button": "Registrovat se",
+        "loading": "Registrace",
+        "password": "Heslo",
+        "confirm_password": "Potvrďte heslo",
+        "name": "Jméno",
+        "surname": "Příjmení",
+        "success": "Registrace proběhla úspěšně",
+        "error": {
+            "passwords_dont_match": "Hesla se neshodují",
+            "registration_failed": "Registrace se nezdařila",
+            "empty_fields": "Prosím vyplňte všechna pole"
+        }
+    },
+    "edit_flower": {
+        "title": "Upravit květinu",
+        "input": "Název květiny",
+        "button": "Upravit květinu",
+        "schedule_title": "Rozvrh"
+    },
+    "smart_pot_list": {
+        "title": "Chytré květináče v",
+        "filters": {
+            "all": "Vše",
+            "active": "Aktivní",
+            "not_active": "Neaktivní"
+        },
+        "no_smart_pots": "Žádné chytré květináče",
+        "error_loading": "V této domácnosti nebyly nalezeny žádné chytré květináče",
+        "actions": {
+            "add": "Přidat květináč"
+        },
+        "flower_item": {
+            "assigned": "Přiřazeno ke květině",
+            "not_assigned": "Nepřiřazeno ke květině",
+            "details": "Detaily"
+        }
+    },
+    "userProfile": {
+        "title": "Uživatelský profil",
+        "name": "Jméno",
+        "surname": "Příjmení",
+        "email": "Email",
+        "editProfile": "Upravit profil",
+        "changePassword": "Změnit heslo",
+        "changePasswordButton": "Změnit heslo",
+        "saveChanges": "Uložit změny",
+        "cancel": "Zrušit",
+        "success": "Profil byl úspěšně aktualizován",
+        "error": "Nepodařilo se aktualizovat profil",
+        "password": {
+            "current": "Současné heslo",
+            "new": "Nové heslo",
+            "confirm": "Potvrďte nové heslo",
+            "success": "Heslo bylo úspěšně změněno",
+            "error": "Nepodařilo se změnit heslo"
+        }
+    },
+    "flower_detail": {
+        "schedule": "Rozvrh zalévání",
+        "no_schedule": "Žádný rozvrh",
+        "schedule_activated": "Rozvrh byl aktivován",
+        "schedule_deactivated": "Rozvrh byl deaktivován",
+        "schedule_toggle_error": "Nepodařilo se přepnout rozvrh",
+        "enable_schedule": "Povolit rozvrh",
+        "disable_schedule": "Zakázat rozvrh",
+        "transplant_description": "Můžete přesadit svou květinu do jiného chytrého květináče ve stejné domácnosti nebo ji přesunout do jiné domácnosti. Při přesunu do jiné domácnosti můžete zvolit, zda si ponechat současný chytrý květináč nebo ho přiřadit k jiné květině.",
+        "edit_schedule": {
+            "title": "Upravit rozvrh zalévání",
+            "error": {
+                "invalid_time": "Neplatný časový údaj, 'Od' musí byť pred 'Do'.",
+                "at_least_one_day": "Musí byť vyplnený aspoň jeden deň v rozvrhu.",
+                "update_failed": "Chyba pri aktualizácii rozvrhu."
+            },
+            "success": {
+                "schedule_updated": "Rozvrh bol úspešne aktualizovaný."
+            }
+        },
+        "edit_name_avatar": {
+            "title": "Upravit jméno a avatar",
+            "success": {
+                "updated": "Květina byla úspěšně aktualizována!"
+            },
+            "error": {
+                "update_failed": "Chyba při aktualizaci květiny. Zkuste to prosím znovu."
+            },
+            "console": {
+                "update_error_prefix": "Chyba při aktualizaci květiny:"
+            }
+        },
+        "save": "Uložit",
+        "saving": "Ukládání...",
+        "days": {
+            "monday": "Pondělí",
+            "tuesday": "Úterý",
+            "wednesday": "Středa",
+            "thursday": "Čtvrtek",
+            "friday": "Pátek",
+            "saturday": "Sobota",
+            "sunday": "Neděle"
+        },
+        "missing_params": "Chybějící parametry",
+        "loading": "Načítání...",
+        "error_loading": "Chyba při načítání dat: {{error}}",
+        "flower_not_found": "Květina nebyla nalezena",
+        "loading_flower_data": "Načítání dat květiny...",
+        "signed_into": "Přihlášený do {{serialNumber}}",
+        "water_level": "Hladina vody",
+        "battery_status": "Stav baterie: {{value}}%",
+        "smartpot_low_warning": "Upozornění: Smartpot je nízký",
+        "auto_watering_settings": "Nastavení profilu automatického zavlažování",
+        "assigned_profile": "Květina má přiřazený profil:",
+        "custom_settings": "Květina je na vlastních nastaveních",
+        "loading": "Načítání profilu...",
+        "temperature": "Teplota",
+        "humidity": "Vlhkost",
+        "light": "Světlení",
+        "min": "Minimální:",
+        "max": "Maximální:",
+        "min_light": "Minimální:",
+        "max_light": "Maximální:",
+        "transplant": "Přesadit květinu",
+        "back_to_list": "Zpět na seznam",
+        "view_smartpot": "Zobrazit smartpot",
+        "transplant_title": "Přesadit květinu",
+        "current_household": "Aktuální domácnost",
+        "select_new_household": "Vyberte novou domácnost",
+        "select_household_placeholder": "Vyberte domácnost",
+        "keep_smart_pot": "Chcete zachovat květináč při přesazování?",
+        "yes": "Ano",
+        "no": "Ne",
+        "confirm_transplant": "Potvrdit přesazování",
+        "transplanting": "Přesazování...",
+        "transplant_success": "Květina byla úspěšně přesazena",
+        "transplant_error": "Nepodařilo se přesadit květinu",
+        "assign_new_smart_pot": "Chcete přiřadit květináč k jiné květině v této domácnosti?",
+        "select_flower": "Vyberte květinu",
+        "select_flower_placeholder": "Vyberte květinu z domácnosti",
+        "no_flowers_available": "V této domácnosti nejsou žádné dostupné květiny",
+        "transplant_type": "Typ přesazování",
+        "same_household": "V rámci téže domácnosti",
+        "different_household": "Do jiné domácnosti",
+        "select_smart_pot": "Vyberte květináč",
+        "select_smart_pot_placeholder": "Vyberte květináč z domácnosti",
+        "no_smartpots_available": "V této domácnosti nejsou žádné dostupné květináče",
+        "disconnect_flower": "Odpojit květinu od smartpotu",
+        "error": {
+            "no_smart_pot_selected": "Nebyl vybrán žádný smart pot",
+            "no_household_selected": "Nebyla vybrána žádná domácnost",
+            "transplant_error_console": "Chyba při přesazování:"
+        },
+        "avatar_alt": "Avatar květináče",
+        "disconnect_success_toast": "Květina byla úspěšně odpojena od smartpotu",
+        "disconnect_error_fallback_toast": "Nepodařilo se odpojit květinu od smartpotu",
+        "delete_success_toast": "Květina byla úspěšně vymazána",
+        "delete_error_toast": "Nepodařilo se vymazat květinu",
+        "no_smartpot_assigned_text": "Žádný smartpot není přiřazen",
+        "delete_flower_button_text": "Smazat květinu",
+        "schedule_no_time_placeholder": "-",
+        "unit": {
+            "celsius": "°C",
+            "percent": "%",
+            "lightness": "%"
+        },
+        "console": {
+            "disconnect_error_prefix": "Chyba při odpojení květiny:",
+            "loading_measurements_from_prefix": "Načítávám měření od:",
+            "no_measurements_loading_from_prefix": "Nemáme měření, načítávám od:",
+            "data_load_error_prefix": "Chyba při načítání dat:",
+            "websocket_init_prefix": "Inicializuji WebSocket pro květinu:",
+            "websocket_serial_prefix": "sériové číslo:",
+            "websocket_closing_prefix": "Zavírám WebSocket připojení pro květinu:",
+            "websocket_cleanup_info": "Cleanup useEffect ve FlowerDetail - zvažuje se stopWebSocketConnection",
+            "websocket_already_connected_open": "WebSocket služba: Již připojeno a otevřeno pro květinu {{flowerId}}.",
+            "websocket_closing_existing_before_new": "WebSocket služba: Zavírám existující WebSocket (stav: {{state}}) před připojením k {{flowerId}}.",
+            "token_not_available": "Token není k dispozici.",
+            "websocket_open_for_flower": "WebSocket služba: OTEVŘENO pro květinu {{flowerId}}.",
+            "websocket_error_for_flower": "WebSocket služba: CHYBA pro květinu {{flowerId}}.",
+            "websocket_reconnecting_to_flower": "WebSocket služba: Znovu se připojuji ke květině {{flowerId}}.",
+            "websocket_switching_flower": "WebSocket: Přepínám z {{oldFlowerId}} na {{newFlowerId}}. Nejprve odpojuji staré.",
+            "websocket_already_connected_to_flower": "WebSocket: Již připojeno k {{flowerId}}.",
+            "websocket_stopping_connection_for_flower": "WebSocket: Zastavuji připojení pro {{flowerId}}.",
+            "websocket_stop_called_on_inactive": "WebSocket: voláno stopWebSocketConnection, ale stav je již {{status}} nebo žádná aktivní květina."
+        },
+        "websocket_status": {
+            "idle": "Sledování kvetu není aktívne.",
+            "connecting": "Pripájam sa k vášmu kvetu pre sledovanie v reálnom čase...",
+            "connected": "Ste uspesne pripojení k vášmu kvetu. Dáta sa sledujú v reálnom čase.",
+            "reconnecting": "Spojenie bolo prerušené. Pokúšam sa znovu pripojiť...",
+            "disconnected": "Nepodarilo sa pripojiť k vášmu kvetu pre sledovanie v reálnom čase. Skontrolujte pripojenie zariadenia.",
+            "error": "Vyskytla sa chyba pripojenia k vášmu kvetu. Skúste obnoviť stránku.",
+            "closing": "Ukončujem spojenie pre sledovanie kvetu..."
+        }
+    },
+    "edit_flower_profile": {
+        "title": "Upravit profil kvetiny",
+        "profile_type": "Typ profilu",
+        "use_existing_profile": "Použít existující profil",
+        "custom_settings": "Vlastní nastavení",
+        "select_profile": "Vyberte profil",
+        "select_profile_placeholder": "Vyberte existující profil",
+        "temperature": "Teplota (°C)",
+        "humidity": "Vlhkost (%)",
+        "light": "Světlo (%)",
+        "save": "Uložit",
+        "custom_profile": {
+            "placeholder_min": "Min",
+            "placeholder_max": "Max"
+        },
+        "range_separator_display": " - ",
+        "error": {
+            "select_profile_error": "Prosím, vyberte profil.",
+            "fill_all_values": "Prosím, vyplňte všetky minimálne a maximálne hodnoty.",
+            "min_greater_than_max": "Minimálna hodnota nemôže byť väčšia ako maximálna.",
+            "update_error": "Profil sa nepodarilo aktualizovať."
+        },
+        "success": {
+            "update_success": "Profil bol úspešne aktualizovaný."
+        },
+        "console": {
+            "update_result_prefix": "Výsledok aktualizácie:",
+            "update_error_prefix": "Chyba pri aktualizácii:"
+        }
+    },
+    "settings": {
+        "household_settings": "Nastavení domácnosti",
+        "rename_household": "Přejmenovat domácnost",
+        "new_household_name": "Nový název domácnosti",
+        "rename": "Přejmenovat",
+        "leave_household": "Opustit domácnost",
+        "leave": "Opustit",
+        "delete_household": "Smazat domácnost",
+        "delete": "Smazat",
+        "toast": {
+            "enter_household_name": "Prosím zadejte název domácnosti",
+            "rename_success": "Domácnost byla úspěšně přejmenována",
+            "rename_error": "Chyba při přejmenování domácnosti",
+            "leave_success": "Opustili jste domácnost",
+            "leave_error": "Chyba při opuštění domácnosti",
+            "delete_success": "Domácnost byla úspěšně smazána",
+            "delete_error": "Chyba při mazání domácnosti"
+        }
+    },
+    "smart_pot_detail": {
+        "missing_params": "Chybějící parametry",
+        "loading": "Načítání...",
+        "error_loading": "Chyba při načítání dat: {{error}}",
+        "smart_pot_not_found": "Smart pot nebyl nalezen",
+        "loading_smart_pot_data": "Načítání dat smart potu...",
+        "battery_level": "Stav baterie",
+        "last_connection": "Poslední připojení",
+        "assigned_flower": "Přiřazená květina",
+        "no_flower_assigned": "Žádná květina není přiřazena",
+        "view_flower": "Zobrazit květinu",
+        "disconnect": "Odpojit od květiny",
+        "transplant": "Přesadit",
+        "disconnect_title": "Odpojit květináč",
+        "disconnect_message": "Jste si jistý, že chcete odpojit tento květináč od květiny? Tato akce je nevratná.",
+        "cancel": "Zrušit",
+        "confirm_disconnect": "Odpojit",
+        "disconnecting": "Odpojování...",
+        "disconnect_success": "Květináč byl úspěšně odpojen",
+        "disconnect_error": "Nepodařilo se odpojit květináč",
+        "transplant_title": "Přesadit smart pot",
+        "current_household": "Aktuální domácnost",
+        "select_new_household": "Vyberte novou domácnost",
+        "select_household_placeholder": "Vyberte domácnost",
+        "confirm_transplant": "Potvrdit přesazování",
+        "transplanting": "Přesazování...",
+        "transplant_success": "Smart pot byl úspěšně přesazen",
+        "transplant_error": "Nepodařilo se přesadit smart pot",
+        "transplant_type": "Typ přesazování",
+        "same_household": "V rámci téže domácnosti",
+        "different_household": "Do jiné domácnosti",
+        "select_flower": "Vyberte květinu",
+        "select_flower_placeholder": "Vyberte květinu z domácnosti",
+        "no_flowers_available": "V této domácnosti nejsou žádné dostupné květiny",
+        "transplant_warning": "Upozornění: Pokud přesadíte smart pot s přiřazenou květinou, květina bude deaktivována",
+        "keep_flower": "Chcete přesadit květinu spolu se smart potem?",
+        "yes": "Ano",
+        "no": "Ne",
+        "assign_flower": "Chcete přiřadit květinu k jinému květináči v této domácnosti?",
+        "select_new_smart_pot": "Vyberte nový květináč",
+        "select_smart_pot_placeholder": "Vyberte květináč z domácnosti",
+        "disconnect_from_household": "Odpojit od domácnosti"
+    },
+    "add_smart_pot": {
+        "title": "Přidat chytrý květináč",
+        "serial_number": "Sériové číslo květináče",
+        "serial_number_placeholder": "Zadejte sériové číslo květináče",
+        "final_button": "Přidat květináč",
+        "saving": "Ukládání...",
+        "error": {
+            "serial_required": "Sériové číslo je povinné",
+            "general": "Nepodařilo se přidat květináč"
+        }
+    },
+    "changePassModal": {
+        "title": "Změnit heslo",
+        "current_password": "Současné heslo",
+        "current_password_placeholder": "Zadejte své současné heslo",
+        "new_password": "Nové heslo",
+        "new_password_placeholder": "Zadejte své nové heslo",
+        "confirm_new_password": "Potvrďte nové heslo",
+        "confirm_new_password_placeholder": "Potvrďte své nové heslo",
+        "submit_button": "Změnit heslo",
+        "saving": "Ukládání...",
+        "error": {
+            "all_fields_required": "Všechna pole jsou povinná.",
+            "password_too_short": "Nové heslo musí mít alespoň 6 znaků.",
+            "passwords_do_not_match": "Nová hesla se neshodují.",
+            "change_failed": "Nepodařilo se změnit heslo. Zkontrolujte prosím své současné heslo.",
+            "change_failed_unexpected": "Při změně hesla došlo k neočekávané chybě.",
+            "change_failed_toast": "Změna hesla se nezdařila"
+        },
+        "success": {
+            "password_changed": "Heslo bylo úspěšně změněno."
+        }
+    },
+    "notifications": {
+        "page_title": "Oznámení",
+        "invites_section": {
+            "title": "Pozvánky do domácností",
+            "no_invites_image_alt": "Žádné notifikace",
+            "no_invites_message": "Nemáte žádné pozvánky do domácností"
+        },
+        "toast": {
+            "invite_accepted_success": "Pozvánka přijata",
+            "invite_accepted_error": "Nepodařilo se přijmout pozvánku",
+            "invite_rejected_success": "Pozvánka zamítnuta",
+            "invite_rejected_error": "Nepodařilo se zamítnout pozvánku"
+        },
+        "format_date": {
+            "today_prefix": "Dnes ",
+            "yesterday_prefix": "Včera "
+        }
+    }
+}

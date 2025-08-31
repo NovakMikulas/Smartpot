@@ -1,0 +1,55 @@
+$primary-text: #ffffff
+$secondary-text: mix(white, #000000, 70%)
+$warning-text-color: #f93333
+$success-text-color: #2ecc71
+$background-color: #000000
+
+$button-defult-border: #ffffff
+$button-defult-background: none
+$button-defult-color: #ffffff
+
+$button-secondery-border: mix(white, #000000, 70%)
+$button-secondery-background: none
+$button-secondery-color: mix(white, #000000, 70%)
+
+$font-family: 'Arial', sans-serif
+$font-size-base: 16px
+$font-size-large: 24px
+$font-size-small: 12px
+$line-height-base: 1.5
+$font-weight-normal: 400
+$font-weight-bold: 700
+
+$highlight-color: green
+
+$capacity-color: #2ecc71
+$watering-color: #3498db
+$lighting-color: #f1c40f
+$temperature-color: #e74c3c
+
+body
+    background-color: $background-color;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    overflow-x: hidden
+    overflow-y: auto
+    &::-webkit-scrollbar
+        width: 0
+        height: 0
+        display: none
+    -ms-overflow-style: none !important
+    scrollbar-width: none !important
+
+img
+    user-select: none
+    -webkit-user-drag: none
+    -khtml-user-drag: none
+    -moz-user-drag: none
+    -o-user-drag: none
+
+.avatar-grid
+    img
+        pointer-events: auto
+        cursor: pointer
+

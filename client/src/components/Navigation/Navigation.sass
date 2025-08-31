@@ -1,0 +1,243 @@
+@import "../../styles/global"
+
+.navbar
+  display: flex
+  justify-content: space-between
+  align-items: center
+  padding: 1rem 1.5rem
+  color: white
+  height: 70px
+  position: relative
+  z-index: 1000
+
+  &__logo
+    display: flex
+    align-items: center
+    cursor: pointer
+
+    &-icon
+      width: 40px
+      height: 40px
+      margin-right: 10px
+
+      img
+        width: 100%
+        height: 100%
+
+    &-text
+      font-size: 1.2rem
+      font-weight: 500
+      color: $secondary-text
+
+  &__actions
+    display: flex
+    align-items: center
+    gap: 15px
+
+  &__user-info
+    color: $primary-text
+    font-size: 1rem
+    margin-right: 1rem
+    @media (max-width: 768px)
+      display: none
+
+  &__desktop-bell-icon
+    cursor: pointer
+    transition: color 0.3s ease
+    &:hover
+      color: $highlight-color
+
+  &__menu-btn
+    background: none
+    border: none
+    cursor: pointer
+    padding: 0.5rem
+    display: flex
+    align-items: center
+    justify-content: center
+
+  &__menu-icon
+    width: 24px
+    height: 18px
+    position: relative
+    display: flex
+    justify-content: center
+    align-items: center
+    flex-direction: column
+    gap: 5px
+
+    span
+      display: block
+      height: 2px
+      width: 100%
+      background: white
+      border-radius: 2px
+      transition: all 0.3s ease
+
+    &.open
+      span
+        &:first-child
+          transform: rotate(45deg) translate(5px, 5px)
+
+        &:nth-child(2)
+          opacity: 0
+
+        &:last-child
+          transform: rotate(-45deg) translate(5px, -5px)
+
+  &__desktop-menu
+    display: none
+    list-style: none
+    justify-content: center
+    margin: 0
+    padding: 0
+
+  &__menu-item
+    margin: 0 1rem
+    cursor: pointer
+    font-size: 1rem
+    transition: color 0.3s ease
+    padding: 8px 12px
+    border-radius: 8px
+
+  &__mobile-menu
+    position: fixed
+    top: 0
+    right: 0
+    width: 80%
+    height: 100%
+    background-color: #000000
+    transition: transform 0.7s ease
+    transform: translateX(100%)
+    z-index: 999
+    display: flex
+    flex-direction: column
+    box-shadow: -5px 0 15px rgba(0, 0, 0, 0.5)
+
+    &.open
+      transform: translateX(0)
+
+  &__mobile-header
+    display: flex
+    justify-content: space-between
+    align-items: center
+    padding: 1rem
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1)
+
+  &__close-btn
+    background: none
+    border: none
+    color: white
+    font-size: 24px
+    cursor: pointer
+    width: 40px
+    height: 40px
+    display: flex
+    align-items: center
+    justify-content: center
+    border-radius: 50%
+    transition: background-color 0.3s ease
+
+    &:hover
+      background-color: rgba(255, 255, 255, 0.1)
+
+  &__menu-links
+    list-style: none
+    padding: 2rem
+    margin: 0
+    display: flex
+    flex-direction: column
+    gap: 1rem
+
+  &__menu-item
+    font-size: 1.2rem
+    color: white
+    cursor: pointer
+    padding: 12px 16px
+    border-radius: 8px
+    transition: all 0.3s ease
+
+    &:hover
+      color: $highlight-color
+      background-color: rgba(255, 255, 255, 0.05)
+
+  &__overlay
+    position: fixed
+    top: 0
+    left: 0
+    right: 0
+    bottom: 0
+    background: rgba(0, 0, 0, 0.7)
+    z-index: 998
+    backdrop-filter: blur(3px)
+
+.navbar__languages
+  display: flex
+  gap: 8px
+  margin-top: 16px
+  justify-content: center
+
+.language-btn
+  background: none
+  border: 1px solid #ddd
+  padding: 4px 8px
+  border-radius: 4px
+  cursor: pointer
+  color: #666
+  font-size: 14px
+  transition: all 0.2s ease
+
+  &:hover
+    background: #f5f5f5
+
+  &.active
+    background: #4CAF50
+    color: white
+    border-color: #4CAF50
+
+.navbar__bell-wrapper
+  position: relative
+  display: flex
+  align-items: center
+  justify-content: center
+  gap: 5px
+
+.navbar__notification-badge
+  background-color: #4CAF50
+  color: white
+  border-radius: 50%
+  padding: 0
+  font-size: 0.7rem
+  font-weight: bold
+  width: 18px
+  height: 18px
+  display: flex
+  align-items: center
+  justify-content: center
+  border: 1px solid white
+
+@media (max-width: 768px)
+  .navbar__user-info
+    display: none
+
+.navbar__scroll-top-button
+  position: fixed
+  bottom: 50px
+  right: 20px
+  background-color: none
+  color: rgba(76, 175, 80, 0.7)
+  border: none
+  border-radius: 50%
+  padding: 8px 
+  cursor: pointer
+  z-index: 1001 
+  display: flex 
+  align-items: center
+  justify-content: center
+  transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out 
+
+  &:hover
+    background-color: rgba(76, 175, 80, 1) 
+    color: white
+    transform: scale(1.1) 
+

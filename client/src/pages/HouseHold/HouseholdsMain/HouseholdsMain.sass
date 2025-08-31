@@ -1,0 +1,184 @@
+@import '../../../styles/global.sass'
+
+.house-holds-main-container
+    padding: 2.5rem
+    max-width: 1400px
+    margin: 0 auto
+    background: #000000
+    min-height: calc(100vh - 200px)
+    width: 100%
+    box-sizing: border-box
+
+    .main-title
+        margin-bottom: 3rem
+        text-align: center
+        font-size: 2.5rem
+        @media (max-width: 768px)
+            font-size: 2rem
+            margin-bottom: 2rem
+
+    .households-filter-buttons
+        display: flex
+        gap: 1.5rem
+        margin-bottom: 3rem
+        flex-wrap: wrap
+        justify-content: center
+        align-items: center
+        overflow-x: auto
+        white-space: nowrap
+        -webkit-overflow-scrolling: touch
+        scrollbar-width: thin
+        scrollbar-color: #666 #222
+        padding-bottom: 1rem
+
+        @media (max-width: 768px)
+            gap: 1rem
+            padding: 0 1rem 1rem 1rem
+
+        @media (max-width: 480px)
+            gap: 0.5rem
+            padding: 0 0.5rem 1rem 0.5rem
+
+        .households-filter-button
+            flex: 0 0 auto
+            width: 150px
+            min-width: 150px
+            max-width: 150px
+            height: 45px
+            box-sizing: border-box
+            text-align: center
+            padding: 0 1rem
+            font-size: 1rem
+            white-space: nowrap
+            display: flex
+            align-items: center
+            justify-content: center
+            border: 1px solid #ffffff
+            border-radius: 30px
+            color: #ffffff
+            background: transparent
+            cursor: pointer
+            appearance: none
+            transition: all 0.3s ease
+
+            &:hover, &:focus
+                background-color: rgba(255,255,255,0.1)
+                border-color: #ffffff
+                outline: none
+
+            @media (max-width: 768px)
+                font-size: 0.9rem
+                height: 35px
+                padding: 0.5rem 1rem
+                min-width: 120px
+                max-width: 150px
+                width: 130px
+
+        .households-search-input
+            flex: 0 0 auto
+            width: 200px
+            height: 45px
+            padding: 0 1rem
+            border: 1px solid #ffffff
+            border-radius: 30px
+            background: transparent
+            color: #ffffff
+            font-size: 1rem
+            outline: none
+            transition: all 0.3s ease
+
+            &:hover, &:focus
+                background-color: rgba(255,255,255,0.1)
+                border-color: #ffffff
+
+            @media (max-width: 768px)
+                width: 180px
+                height: 35px
+                font-size: 0.9rem
+
+    .households-list
+        display: grid
+        grid-template-columns: repeat(auto-fill, minmax(400px, 1fr))
+        gap: 2rem
+        margin-bottom: 3rem
+        padding: 0 1rem
+
+        @media (max-width: 768px)
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr))
+            gap: 1.5rem
+            padding: 0 0.5rem
+
+    .no-households-text
+        grid-column: 1 / -1
+        text-align: center
+        padding: 3rem
+        color: #666
+        font-size: 1.2rem
+
+    .households-add-section
+        display: flex
+        justify-content: center
+        margin-top: 3rem
+        gap: 1.5rem
+        flex-wrap: wrap
+
+        @media (max-width: 768px)
+            padding: 0 1rem
+            display: flex
+            justify-content: center
+            gap: 1rem
+
+        .create-household-button
+            width: 250px
+            height: 50px
+            font-size: 1.1rem
+            border-radius: 30px
+            @media (max-width: 768px)
+                width: 200px
+                font-size: 1rem
+                padding: 1rem
+                min-width: 0
+                white-space: nowrap
+                height: 40px
+                display: flex
+                align-items: center
+                justify-content: center
+                text-align: center
+                margin: 0 auto
+
+    @media (max-width: 768px)
+        padding: 1.5rem
+        width: 100%
+
+    .error-container
+        text-align: center
+        padding: 3rem
+        color: #f44336
+        font-size: 1.2rem
+
+.create-household-form
+    display: flex
+    flex-direction: column
+    gap: 1rem
+    width: 100%
+    max-width: 400px
+    padding: 1rem
+
+    border-radius: 12px
+
+    .create-household-input
+        width: 100%
+        padding: 0.75rem
+        border: none
+        border-radius: 6px
+        background: rgba(255, 255, 255, 0.1)
+        color: #ffffff
+        font-size: 1rem
+
+        &::placeholder
+            color: rgba(255, 255, 255, 0.5)
+
+    .create-household-buttons
+        display: flex
+        gap: 1rem
+        justify-content: flex-end

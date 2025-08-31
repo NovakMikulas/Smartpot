@@ -1,0 +1,117 @@
+@import '../../styles/global.sass'
+
+.login-page
+  display: flex
+  flex-direction: column
+  align-items: center
+  min-height: 70vh
+  padding: 1rem
+  background-color: black
+  color: white
+
+.login-title
+  color: $primary-text
+  text-align: center
+  margin-bottom: 30px
+  @media (max-width: 500px)
+    font-size: 2rem
+
+.login-form__wrapper
+  display: flex
+  flex-direction: column
+  align-items: center
+  width: 90%
+  max-width: 500px
+  padding: 40px
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1)
+  border-radius: 20px
+  box-sizing: border-box
+
+.login-form-group
+  display: flex
+  flex-direction: column
+  align-items: center
+  
+  width: 100%
+  margin-bottom: 1rem
+
+  label
+    margin-bottom: 10px
+    font-size: 16px
+    color: $primary-text
+
+  input
+    width: 100%
+    max-width: 300px
+    padding: 12px 16px
+    border-radius: 12px
+    border: 1px solid rgba(255, 255, 255, 0.2)
+    background: transparent
+    color: white
+    font-size: 16px
+    transition: border-color 0.3s ease
+    -webkit-appearance: none
+
+.login-form__button
+  margin-top: 20px
+  background: transparent
+  color: white
+  border: 1px solid white
+  border-radius: 12px
+  padding: 12px 16px
+  font-size: 16px
+  cursor: pointer
+  transition: all 0.3s ease
+  width: 100%
+
+.login-form__links
+  margin-top: 1rem
+  text-align: center
+
+  .forgot-password-link
+    background: none
+    border: none
+    color: #666
+    cursor: pointer
+    font-size: 0.9rem
+    padding: 0.5rem
+    text-decoration: underline
+    transition: color 0.2s ease
+
+    &:hover
+      color: #333
+
+@media (max-width: 768px)
+  .login-form__wrapper
+    width: 95%
+    padding: 30px 20px
+
+  .login-title
+    font-size: 1.8rem
+    margin-bottom: 20px
+
+@media (max-width: 480px)
+  .login-form__wrapper
+    width: 100%
+    max-width: 100%
+    padding: 25px 15px
+
+  .login-form-group
+    label
+      font-size: 14px
+
+    input
+      padding: 10px 14px
+      font-size: 14px
+
+  .login-form__button
+    padding: 10px 14px
+    font-size: 14px
+
+@media (max-height: 600px)
+  .login-page
+    padding: 10px
+    justify-content: flex-start
+
+  .login-title
+    margin: 10px 0

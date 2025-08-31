@@ -1,0 +1,128 @@
+@import '../../../styles/global.sass'
+
+.change-pass-modal
+    &-container
+        position: fixed
+        top: 0
+        left: 0
+        right: 0
+        bottom: 0
+        background-color: rgba(0, 0, 0, 0.7)
+        display: flex
+        justify-content: center
+        align-items: center
+        z-index: 1000
+        padding: 1rem
+
+    &-content
+        background-color: $background-color
+        padding: 2rem 2.5rem
+        border-radius: 1rem
+        width: 90%
+        max-width: 450px
+        max-height: 90vh
+        overflow-y: auto
+        position: relative
+        display: flex
+        flex-direction: column
+        border: 1px solid $button-secondery-border
+        gap: 1.5rem
+        box-shadow: 0 5px 25px rgba(0, 0, 0, 0.4)
+
+       
+        &::-webkit-scrollbar
+            width: 6px
+        &::-webkit-scrollbar-track
+            background: lighten($background-color, 10%)
+            border-radius: 3px
+        &::-webkit-scrollbar-thumb
+            background-color: $highlight-color
+            border-radius: 3px
+
+    &-close-button
+        position: absolute
+        top: 1rem
+        right: 1rem
+        background: none
+        border: none
+        font-size: 1.8rem
+        font-weight: bold
+        cursor: pointer
+        color: $secondary-text
+        transition: color 0.2s ease
+
+        &:hover
+            color: $primary-text
+
+    &-title
+        color: $primary-text
+        text-align: center
+        margin-bottom: 1rem
+
+    &-form
+        display: flex
+        flex-direction: column
+        gap: 1.2rem
+
+    &-form-group
+        display: flex
+        flex-direction: column
+        gap: 0.4rem
+
+    &-input-label
+        color: $secondary-text
+        font-size: 0.85rem
+        font-weight: 500
+
+    &-input
+        background: lighten($background-color, 5%)
+        border: 1px solid $button-secondery-border
+        border-radius: 8px
+        padding: 0.9rem 1.1rem
+        color: $primary-text
+        font-size: 0.95rem
+        transition: border-color 0.2s ease, box-shadow 0.2s ease
+
+        &::placeholder
+            color: $secondary-text
+
+        &:focus
+            outline: none
+            border-color: $highlight-color
+            box-shadow: 0 0 0 2px rgba($highlight-color, 0.2)
+
+    &-error-message
+        color: $warning-text-color
+        font-size: 0.8rem
+        margin-top: 0.5rem
+        text-align: center
+        min-height: 1.2em
+
+    &-button
+        background: $highlight-color
+        border: none
+        color: $background-color
+        padding: 0.9rem
+        border-radius: 8px
+        font-size: 1rem
+        font-weight: 600
+        cursor: pointer
+        width: 100%
+        margin-top: 1rem
+        transition: background-color 0.2s ease, transform 0.1s ease
+
+        &:hover
+            background: darken($highlight-color, 8%)
+            transform: translateY(-1px)
+
+        &:active
+            transform: translateY(0px)
+
+        &:disabled
+            background-color: #555
+            color: #aaa
+            cursor: not-allowed
+            transform: none
+
+            &:hover
+                background-color: #555

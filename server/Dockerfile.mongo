@@ -1,0 +1,6 @@
+FROM mongo:latest
+
+# Optional: Copy initialization scripts if needed
+# COPY ./init-mongo.js /docker-entrypoint-initdb.d/
+
+EXPOSE 27017 

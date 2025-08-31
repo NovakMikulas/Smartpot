@@ -1,0 +1,681 @@
+{
+    "common": {
+        "loading": "Loading...",
+        "error": "Error",
+        "success": "Success",
+        "save": "Save",
+        "cancel": "Cancel",
+        "delete": "Delete",
+        "edit": "Edit",
+        "loading_text": "Loading..."
+    },
+    "navigation": {
+        "home": "Home",
+        "households": "Households",
+        "notifications": "Notifications",
+        "logout": "Logout",
+        "register": "Register",
+        "login": "Login",
+        "user_profile": "User Profile"
+    },
+    "manage_household": {
+        "title": "Manage",
+        "loading": "Loading...",
+        "not_found": "Household not found",
+        "no_permission": "You don't have permission to manage this household",
+        "sections": {
+            "members": {
+                "title": "Members",
+                "manage_button": "Manage members",
+                "owner_tag": "Owner"
+            },
+            "flowers": {
+                "title": "Flowers",
+                "manage_button": "Manage flowers",
+                "no_items": "No flowers"
+            },
+            "profiles": {
+                "title": "Flower profiles",
+                "manage_button": "Manage profiles",
+                "no_items": "No profiles"
+            },
+            "flowerpots": {
+                "title": "Flowerpots",
+                "manage_button": "Manage flowerpots",
+                "no_items": "No flowerpots",
+                "loading": "Loading flowerpots...",
+                "status": {
+                    "signed": "Signed to flower",
+                    "not_signed": "No flower signed"
+                }
+            },
+            "danger_zone": {
+                "title": "Danger Zone",
+                "description": "Deleting the household is an irreversible action. All data including flowerpots and profiles will be permanently lost.",
+                "delete_button": "Delete household"
+            }
+        },
+        "manage_members": {
+            "title": "Manage members in",
+            "household_members": "Household members",
+            "roles": {
+                "owner": "Owner",
+                "member": "Member"
+            },
+            "actions": {
+                "make_owner": "Make owner",
+                "remove": "Remove"
+            },
+            "add_member": {
+                "title": "Add member",
+                "input": "Email new member",
+                "button": "Invite member",
+                "invite_member": "Invite member",
+                "email": "Email",
+                "email_placeholder": "Enter email address",
+                "send": "Send invitation",
+                "sending": "Sending...",
+                "error": {
+                    "select_user": "Please select a user",
+                    "user_already_member": "This user is already a member of the household",
+                    "user_already_invited": "This user has already been invited",
+                    "invite_send_failed": "Error sending invitation. Please try again."
+                },
+                "toast": {
+                    "invite_sent_success": "Invitation sent successfully!"
+                },
+                "console": {
+                    "error_details_prefix": "Error details:"
+                },
+                "search_placeholder": "Enter username...",
+                "sending_button": "Sending...",
+                "invite_button": "Invite"
+            },
+            "toast": {
+                "remove_member_success": "Member removed successfully",
+                "remove_member_error": "Failed to remove member",
+                "make_owner_success": "Owner changed successfully",
+                "make_owner_error": "Failed to change owner"
+            },
+            "console": {
+                "remove_member_error_prefix": "Error removing member:",
+                "make_owner_error_prefix": "Error changing owner:"
+            },
+            "unknown_user": "Unknown user",
+            "household_not_found": "Household not found",
+            "no_permission": "You do not have permission to manage this household",
+            "active_members": "Active members",
+            "invited_users": "Invited users",
+            "invited_tag": "Invited"
+        },
+        "manage_flowers": {
+            "title": "Manage flowers in",
+            "household_flowers": "Household flowers",
+            "actions": {
+                "add": "Add flower"
+            }
+        }
+    },
+    "create_household": {
+        "title": "Create household",
+        "description": "Create a new household to start managing your plants.",
+        "input": "Household name",
+        "button": "Create household",
+        "error": {
+            "empty_name": "Household name cannot be empty",
+            "general": "Failed to create household. Please try again.",
+            "unauthorized": "You need to be logged in to create a household",
+            "server": "Server error occurred. Please try again later."
+        }
+    },
+    "homepage": {
+        "homepage_intro": {
+            "title": "Smart planter",
+            "description": "The Flowerpot is a smart device that helps you take care of your plants. It monitors the temperature, humidity, light and water level in your plant pot and provides you with the necessary information to take care of your plants.",
+            "button": "Check households"
+        },
+        "homepage_features": {
+            "title": "Features",
+            "features": {
+                "smart_pot": {
+                    "title": "Smart pot monitoring",
+                    "description": "Smart pot monitoring is a feature that allows you to monitor your smart pot from anywhere in the world."
+                },
+                "flower_care": {
+                    "title": "Flower care",
+                    "description": "Flower care is a feature that allows you to care for your flowers."
+                },
+                "household_management": {
+                    "title": "Household management",
+                    "description": "Household management is a feature that allows you to manage your household."
+                }
+            }
+        },
+        "homepage_try_it": {
+            "title": "Try it now",
+            "description": "The Flowerpot is a smart device that helps you take care of your plants.",
+            "button": "Check households"
+        }
+    },
+    "households": {
+        "households_list": {
+            "title": "Household list",
+            "actions": {
+                "check": "Check",
+                "manage": "Manage",
+                "create_new": "Create new"
+            },
+            "no_households": "No households registered. Please create one.",
+            "access_denied_toast": "You no longer have access to this household."
+        },
+        "role": {
+            "owner": "Owner",
+            "member": "Member"
+        },
+        "access_denied_toast": "You no longer have access to this household.",
+        "filters": {
+            "all": "All",
+            "owner": "Owner",
+            "member": "Member",
+            "search_placeholder": "Search household..."
+        }
+    },
+    "flower_list": {
+        "title": "Flowers in",
+        "actions": {
+            "add": "Add flower",
+            "add_flowerpot": "Add flowerpot",
+            "manage_profiles": "Manage profiles",
+            "transplant": "Transplant"
+        },
+        "filters": {
+            "all": "All",
+            "active": "Active",
+            "not_active": "Not active",
+            "free_flowerpot_counter": "Free flowerpots",
+            "all_profiles": "All profiles",
+            "own_settings": "Own settings",
+            "not_assigned": "Not assigned",
+            "assigned": "Assigned"
+        },
+        "profile": {
+            "assigned": "Profile assigned",
+            "not_assigned": "Profile not assigned"
+        },
+        "no_flowers": "No flowers",
+        "flower_item": {
+            "details": "Details",
+            "edit": "Edit your flower",
+            "delete": "Delete",
+            "assign": "Assign to flowerpot"
+        },
+        "error": {
+            "measurements_loading_failed": "Failed to load measurements for flowers.",
+            "profiles_loading_failed": "Failed to load flower profiles.",
+            "generic_loading_failed": "An error occurred while loading data."
+        }
+    },
+    "flower_measurments": {
+        "status": "Status",
+        "measurements": "measurements",
+        "no_measurements": "No measurements available",
+        "measurments": {
+            "humidity": "Humidity",
+            "temperature": "Temperature",
+            "light": "Light",
+            "water_level": "Water level",
+            "battery": "Battery"
+        },
+        "filter_date_range": {
+            "day": "Day",
+            "week": "Last 7 days",
+            "month": "Last month",
+            "custom": "Custom range",
+            "from": "From",
+            "to": "To"
+        },
+        "irrigation": {
+            "title": "Manual irrigation",
+            "placeholder": "Enter value in ml",
+            "button": "Irrigate"
+        },
+        "status_low_temperature": "Low temperature",
+        "status_high_temperature": "High temperature",
+        "status_low_humidity": "Low humidity",
+        "status_high_humidity": "High humidity",
+        "status_low_light": "Low light",
+        "status_high_light": "High light",
+        "status_ok": "All values normal",
+        "status_unknown": "Unknown value",
+        "status_low_battery": "Low battery",
+        "status_medium_battery": "Medium battery",
+        "loading_flowerpot_data": "Loading flowerpot data...",
+        "no_value_placeholder": "-",
+        "unit": {
+            "lux": "%"
+        },
+        "error": {
+            "invalid_date_format": "Invalid date format"
+        }
+    },
+    "add_flower": {
+        "title": "Create flower",
+        "description": "Flowerpot Settings",
+        "name": "Flower name",
+        "name_placeholder": "Enter flower name",
+        "profile_type": "Profile type",
+        "use_existing_profile": "Use existing profile",
+        "custom_settings": "Custom settings",
+        "select_profile": "Select profile",
+        "select_profile_placeholder": "Select existing profile",
+        "temperature": "Temperature (°C)",
+        "humidity": "Humidity (%)",
+        "light": "Light (%)",
+        "avatar": "Flower avatar",
+        "schedule_title": "Watering schedule",
+        "schedule": {
+            "monday": "Monday",
+            "tuesday": "Tuesday",
+            "wednesday": "Wednesday",
+            "thursday": "Thursday",
+            "friday": "Friday",
+            "saturday": "Saturday",
+            "sunday": "Sunday"
+        },
+        "schedule_from": "From",
+        "schedule_to": "To",
+        "saving": "Saving...",
+        "final_button": "Finish",
+        "default_flower_name": "New Flowerpot",
+        "range_separator": "to",
+        "placeholder_min": "Min",
+        "placeholder_max": "Max",
+        "avatar_alt_text": "Flower avatar {{index}}",
+        "error": {
+            "name_required": "Flower name is required",
+            "profile_required": "Please select a profile",
+            "schedule_required": "At least one time interval is required",
+            "invalid_time_range": "Invalid time range for {{day}} - 'From' time must be before 'To' time",
+            "creation_failed_toast": "Error creating flower",
+            "creation_failed_message": "Error creating flowerpot. Please try again.",
+            "no_flower_id_returned": "Flower ID was not returned from the server",
+            "schedule_creation_failed": "Failed to create schedule"
+        },
+        "success": {
+            "flower_added": "Flower added successfully"
+        }
+    },
+    "add_flowerpot": {
+        "title": "Connect your flowerpot to your household",
+        "description": "Flowerpot Settings",
+        "input": "Flowerpot name",
+        "button": "Create flowerpot",
+        "serial_number": "Flowerpot serial number",
+        "connect": "Connect",
+        "help_title": "How to connect?",
+        "help_steps": ["Turn on the flowerpot", "Press the pairing button", "Enter the flowerpot serial number"]
+    },
+    "login_page": {
+        "title": "Login",
+        "input": "Email",
+        "button": "Login",
+        "loading": "Logining in",
+        "register": "Register",
+        "password": "Password",
+        "success": "Successfully logged in",
+        "forgot_password": "Forgot Password",
+        "reset_password": "Reset Password",
+        "back_to_login": "Back to Login",
+        "reset_success": "Password reset instructions have been sent to your email",
+        "error": {
+            "empty_fields": "Please fill in all fields",
+            "invalid_credentials": "Invalid login credentials",
+            "reset_failed": "Failed to send password reset instructions"
+        }
+    },
+    "register_page": {
+        "title": "Register",
+        "input": "Email",
+        "button": "Register",
+        "loading": "Registering",
+        "password": "Password",
+        "confirm_password": "Confirm password",
+        "name": "Name",
+        "surname": "Surname",
+        "success": "Registration successful",
+        "error": {
+            "passwords_dont_match": "Passwords do not match",
+            "registration_failed": "Registration failed",
+            "empty_fields": "Please fill in all fields"
+        }
+    },
+    "edit_flower": {
+        "title": "Edit flower",
+        "input": "Flower name",
+        "button": "Edit flower",
+        "schedule_title": "Schedule"
+    },
+    "smart_pot_list": {
+        "title": "Smart pots in",
+        "filters": {
+            "all": "All",
+            "active": "Active",
+            "not_active": "Not active"
+        },
+        "no_smart_pots": "No smart pots",
+        "error_loading": "No smart pots found in this household",
+        "actions": {
+            "add": "Add smart pot"
+        },
+        "flower_item": {
+            "assigned": "Assigned to flower",
+            "not_assigned": "Not assigned to flower",
+            "details": "Details"
+        }
+    },
+    "userProfile": {
+        "title": "User Profile",
+        "name": "Name",
+        "surname": "Surname",
+        "email": "Email",
+        "editProfile": "Edit Profile",
+        "changePassword": "Change Password",
+        "changePasswordButton": "Change Password",
+        "saveChanges": "Save Changes",
+        "cancel": "Cancel",
+        "success": "Profile has been successfully updated",
+        "error": "Failed to update profile",
+        "password": {
+            "current": "Current Password",
+            "new": "New Password",
+            "confirm": "Confirm New Password",
+            "success": "Password has been successfully changed",
+            "error": "Failed to change password"
+        }
+    },
+    "flower_detail": {
+        "schedule": "Watering Schedule",
+        "no_schedule": "No schedule",
+        "schedule_activated": "Schedule has been activated",
+        "schedule_deactivated": "Schedule has been deactivated",
+        "schedule_toggle_error": "Failed to toggle schedule",
+        "enable_schedule": "Enable schedule",
+        "disable_schedule": "Disable schedule",
+        "transplant_description": "You can transplant your flower to another smart pot within the same household or move it to a different household. When moving to a different household, you can choose whether to keep the current smart pot or assign it to another flower.",
+        "edit_schedule": {
+            "title": "Edit Watering Schedule",
+            "error": {
+                "invalid_time": "Invalid time entry, 'From' must be before 'To'.",
+                "at_least_one_day": "At least one day in the schedule must be filled.",
+                "update_failed": "Error updating schedule."
+            },
+            "success": {
+                "schedule_updated": "Schedule updated successfully."
+            }
+        },
+        "edit_name_avatar": {
+            "title": "Edit name and avatar",
+            "success": {
+                "updated": "Flower updated successfully!"
+            },
+            "error": {
+                "update_failed": "Error updating flower. Please try again."
+            },
+            "console": {
+                "update_error_prefix": "Error updating flower:"
+            }
+        },
+        "save": "Save",
+        "saving": "Saving...",
+        "days": {
+            "monday": "Monday",
+            "tuesday": "Tuesday",
+            "wednesday": "Wednesday",
+            "thursday": "Thursday",
+            "friday": "Friday",
+            "saturday": "Saturday",
+            "sunday": "Sunday"
+        },
+        "missing_params": "Missing parameters",
+        "loading": "Loading...",
+        "error_loading": "Error loading data: {{error}}",
+        "flower_not_found": "Flower not found",
+        "loading_flower_data": "Loading flower data...",
+        "signed_into": "Currently signed into {{serialNumber}}",
+        "water_level": "Water level",
+        "battery_status": "Battery status: {{value}}%",
+        "smartpot_low_warning": "Warning: Smartpot is low",
+        "auto_watering_settings": "Automatic watering profile settings",
+        "assigned_profile": "Flower has assigned profile:",
+        "custom_settings": "Flower is on custom settings",
+        "loading": "Loading profile...",
+        "temperature": "Temperature",
+        "humidity": "Humidity",
+        "light": "Light",
+        "min": "Minimum:",
+        "max": "Maximum:",
+        "min_light": "Minimum:",
+        "max_light": "Maximum:",
+        "transplant": "Transplant flower",
+        "back_to_list": "Back to list",
+        "view_smartpot": "View smartpot",
+        "transplant_title": "Transplant flower",
+        "current_household": "Current household",
+        "select_new_household": "Select new household",
+        "select_household_placeholder": "Select household",
+        "keep_smart_pot": "Do you want to keep the smart pot when transplanting?",
+        "yes": "Yes",
+        "no": "No",
+        "confirm_transplant": "Confirm transplant",
+        "transplanting": "Transplanting...",
+        "transplant_success": "Flower was successfully transplanted",
+        "transplant_error": "Failed to transplant flower",
+        "assign_new_smart_pot": "Do you want to assign the smart pot to another flower in this household?",
+        "select_flower": "Select flower",
+        "select_flower_placeholder": "Select flower from household",
+        "no_flowers_available": "No available flowers in this household",
+        "transplant_type": "Transplant type",
+        "same_household": "Within the same household",
+        "different_household": "To a different household",
+        "select_smart_pot": "Select smart pot",
+        "select_smart_pot_placeholder": "Select smart pot from household",
+        "no_smartpots_available": "No available smart pots in this household",
+        "disconnect_flower": "Disconnect flower from smartpot",
+        "error": {
+            "no_smart_pot_selected": "No smart pot selected",
+            "no_household_selected": "No household selected",
+            "transplant_error_console": "Transplant error:"
+        },
+        "avatar_alt": "Flowerpot Avatar",
+        "disconnect_success_toast": "Flower successfully disconnected from smartpot",
+        "disconnect_error_fallback_toast": "Failed to disconnect flower from smartpot",
+        "delete_success_toast": "Flower successfully deleted",
+        "delete_error_toast": "Failed to delete flower",
+        "no_smartpot_assigned_text": "No smartpot assigned",
+        "delete_flower_button_text": "Delete Flower",
+        "schedule_no_time_placeholder": "-",
+        "unit": {
+            "celsius": "°C",
+            "percent": "%",
+            "lightness": "%"
+        },
+        "console": {
+            "disconnect_error_prefix": "Error disconnecting flower:",
+            "loading_measurements_from_prefix": "Loading measurements from:",
+            "no_measurements_loading_from_prefix": "No measurements, loading from:",
+            "data_load_error_prefix": "Error loading data:",
+            "websocket_init_prefix": "Initializing WebSocket for flower:",
+            "websocket_serial_prefix": "serial number:",
+            "websocket_closing_prefix": "Closing WebSocket connection for flower:",
+            "websocket_cleanup_info": "Cleanup useEffect in FlowerDetail - considering stopWebSocketConnection",
+            "websocket_already_connected_open": "WebSocketService: Already connected and open for flower {{flowerId}}.",
+            "websocket_closing_existing_before_new": "WebSocketService: Closing existing WebSocket (state: {{state}}) before connecting to {{flowerId}}.",
+            "token_not_available": "Token is not available.",
+            "websocket_open_for_flower": "WebSocketService: OPEN for flower {{flowerId}}.",
+            "websocket_error_for_flower": "WebSocketService: ERROR for flower {{flowerId}}.",
+            "websocket_reconnecting_to_flower": "WebSocketService: Reconnecting to flower {{flowerId}}.",
+            "websocket_switching_flower": "WebSocket: Switching from {{oldFlowerId}} to {{newFlowerId}}. Disconnecting old one first.",
+            "websocket_already_connected_to_flower": "WebSocket: Already connected to {{flowerId}}.",
+            "websocket_stopping_connection_for_flower": "WebSocket: Stopping connection for {{flowerId}}.",
+            "websocket_stop_called_on_inactive": "WebSocket: stopWebSocketConnection called but status is already {{status}} or no active flower."
+        },
+        "websocket_status": {
+            "idle": "Flower tracking is not active.",
+            "connecting": "Connecting to your flower for real-time tracking...",
+            "connected": "Successfully connected to your flower. Real-time data tracking is active.",
+            "reconnecting": "Connection lost. Attempting to reconnect...",
+            "disconnected": "Failed to connect to your flower for real-time tracking. Please check device connection.",
+            "error": "An error occurred while connecting to your flower. Please try refreshing the page.",
+            "closing": "Closing connection for flower tracking..."
+        }
+    },
+    "edit_flower_profile": {
+        "title": "Edit Flower Profile",
+        "profile_type": "Profile Type",
+        "use_existing_profile": "Use Existing Profile",
+        "custom_settings": "Custom Settings",
+        "select_profile": "Select Profile",
+        "select_profile_placeholder": "Select existing profile",
+        "temperature": "Temperature (°C)",
+        "humidity": "Humidity (%)",
+        "light": "Light (%)",
+        "save": "Save",
+        "custom_profile": {
+            "placeholder_min": "Min",
+            "placeholder_max": "Max"
+        },
+        "range_separator_display": " - ",
+        "error": {
+            "select_profile_error": "Please select a profile.",
+            "fill_all_values": "Please fill in all minimum and maximum values.",
+            "min_greater_than_max": "Minimum value cannot be greater than maximum value.",
+            "update_error": "Failed to update profile."
+        },
+        "success": {
+            "update_success": "Profile updated successfully."
+        },
+        "console": {
+            "update_result_prefix": "Update Result:",
+            "update_error_prefix": "Error updating:"
+        }
+    },
+    "settings": {
+        "household_settings": "Household Settings",
+        "rename_household": "Rename Household",
+        "new_household_name": "New household name",
+        "rename": "Rename",
+        "leave_household": "Leave Household",
+        "leave": "Leave",
+        "delete_household": "Delete Household",
+        "delete": "Delete",
+        "toast": {
+            "enter_household_name": "Please enter household name",
+            "rename_success": "Household was successfully renamed",
+            "rename_error": "Error while renaming household",
+            "leave_success": "You have left the household",
+            "leave_error": "Error while leaving household",
+            "delete_success": "Household was successfully deleted",
+            "delete_error": "Error while deleting household"
+        }
+    },
+    "smart_pot_detail": {
+        "missing_params": "Missing parameters",
+        "loading": "Loading...",
+        "error_loading": "Error loading data: {{error}}",
+        "smart_pot_not_found": "Smart pot not found",
+        "loading_smart_pot_data": "Loading smart pot data...",
+        "battery_level": "Battery level",
+        "last_connection": "Last connection",
+        "assigned_flower": "Assigned flower",
+        "no_flower_assigned": "No flower assigned",
+        "view_flower": "View flower",
+        "disconnect": "Disconnect from flower",
+        "transplant": "Transplant",
+        "disconnect_title": "Disconnect flowerpot",
+        "disconnect_message": "Are you sure you want to disconnect this flowerpot from the flower? This action cannot be undone.",
+        "cancel": "Cancel",
+        "confirm_disconnect": "Disconnect",
+        "disconnecting": "Disconnecting...",
+        "disconnect_success": "Flowerpot was successfully disconnected",
+        "disconnect_error": "Failed to disconnect flowerpot",
+        "transplant_title": "Transplant smart pot",
+        "current_household": "Current household",
+        "select_new_household": "Select new household",
+        "select_household_placeholder": "Select household",
+        "confirm_transplant": "Confirm transplant",
+        "transplanting": "Transplanting...",
+        "transplant_success": "Smart pot was successfully transplanted",
+        "transplant_error": "Failed to transplant smart pot",
+        "transplant_type": "Transplant type",
+        "same_household": "Within the same household",
+        "different_household": "To a different household",
+        "select_flower": "Select flower",
+        "select_flower_placeholder": "Select flower from household",
+        "no_flowers_available": "No available flowers in this household",
+        "transplant_warning": "Warning: If you transplant a smart pot with an assigned flower, the flower will be deactivated",
+        "keep_flower": "Do you want to move the flower with the smart pot?",
+        "yes": "Yes",
+        "no": "No",
+        "assign_flower": "Do you want to assign the flower to another smart pot in this household?",
+        "select_new_smart_pot": "Select new smart pot",
+        "select_smart_pot_placeholder": "Select smart pot from household",
+        "disconnect_from_household": "Disconnect from household"
+    },
+    "not_found": {
+        "title": "404",
+        "subtitle": "Page not found",
+        "description": "Sorry, but the page you are looking for does not exist.",
+        "button": "Back to home page"
+    },
+    "add_smart_pot": {
+        "title": "Add smart pot",
+        "serial_number": "Smart pot serial number",
+        "serial_number_placeholder": "Enter smart pot serial number",
+        "final_button": "Add smart pot",
+        "saving": "Saving...",
+        "error": {
+            "serial_required": "Serial number is required",
+            "general": "Failed to add smart pot"
+        }
+    },
+    "changePassModal": {
+        "title": "Change Password",
+        "current_password": "Current Password",
+        "current_password_placeholder": "Enter your current password",
+        "new_password": "New Password",
+        "new_password_placeholder": "Enter your new password",
+        "confirm_new_password": "Confirm New Password",
+        "confirm_new_password_placeholder": "Confirm your new password",
+        "submit_button": "Change Password",
+        "saving": "Saving...",
+        "error": {
+            "all_fields_required": "All fields are required.",
+            "password_too_short": "New password must be at least 6 characters long.",
+            "passwords_do_not_match": "New passwords do not match.",
+            "change_failed": "Failed to change password. Please check your current password.",
+            "change_failed_unexpected": "An unexpected error occurred while changing password.",
+            "change_failed_toast": "Password change failed"
+        },
+        "success": {
+            "password_changed": "Password changed successfully."
+        }
+    },
+    "notifications": {
+        "page_title": "Notifications",
+        "invites_section": {
+            "title": "Household Invitations",
+            "no_invites_image_alt": "No notifications",
+            "no_invites_message": "You have no household invitations"
+        },
+        "toast": {
+            "invite_accepted_success": "Invitation accepted",
+            "invite_accepted_error": "Failed to accept invitation",
+            "invite_rejected_success": "Invitation rejected",
+            "invite_rejected_error": "Failed to reject invitation"
+        },
+        "format_date": {
+            "today_prefix": "Today ",
+            "yesterday_prefix": "Yesterday "
+        }
+    }
+}
